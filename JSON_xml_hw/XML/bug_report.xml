@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bug_report>
+<id>1111.2</id>
+<summary>login button dsnt work</summary>
+<description>after entering valid data login button cant be pressed</description>
+<expected_result>after entering valid data you can press login button</expected_result>
+<actual_result>after entering valid data login button cant be pressed</actual_result>
+<steps_to_reproduce>1) open best.login.com 2) enter user - 'best user', password - 'bestpassword' 3) press login button</steps_to_reproduce>
+<reproducibility>always</reproducibility>
+<severety>critical</severety>
+<priority>1</priority>
+</bug_report>

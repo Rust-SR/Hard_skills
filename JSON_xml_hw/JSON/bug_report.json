@@ -1,0 +1,11 @@
+{
+"id": "1111"
+"summary": "login button dsnt work"
+"description": "after entering valid data login button cant be pressed"
+"expected result": "after entering valid data you can press login button"
+"actual result": "after entering valid data login button cant be pressed"
+"steps to reproduce": "1) open best.login.com 2) enter user - 'best user', password - 'bestpassword' 3) press login button"
+"reproducibility": "always"
+"severety": "critical"
+"priority": "1" 
+}
