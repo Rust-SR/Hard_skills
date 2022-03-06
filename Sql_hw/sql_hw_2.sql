@@ -1,8 +1,6 @@
-
 -- 1. Создать таблицу employees
 -- id. serial,  primary key,
 -- employee_name. Varchar(50), not null
-
 
 create table employees (
 	id serial primary key,
@@ -84,18 +82,17 @@ values
 ('Name69'),
 ('Name70');
 
-/*
-3. Создать таблицу salary
-- id. Serial  primary key,
-- monthly_salary. Int, not null
-*/
+--3. Создать таблицу salary
+-- id. Serial  primary key,
+-- monthly_salary. Int, not null
+
 create table salary (
 	id serial primary key,
 	monthly_salary int not null
 );
 select * from salary;
-/*
- * 4. Наполнить таблицу salary 15 строками:
+
+--4. Наполнить таблицу salary 15 строками:
 - 1000
 - 1100
 - 1200
@@ -117,8 +114,9 @@ select * from salary;
 insert into salary(monthly_salary)
 	values(1000),(1100), (1200), (1300), (1400),(1500), (1600), (1700),(1800), (1900), (2000), (2100), (2200), (2300), (2400), (2500);
 
-/*
- 5) Создать таблицу employee_salary
+
+ --5) Создать таблицу employee_salary
+
 - id. Serial  primary key,
 - employee_id. Int, not null, unique
 - salary_id. Int, not null
@@ -130,10 +128,9 @@ create table employee_salary (
 	salary_id int not null
 );
 
-/*
- 6) Наполнить таблицу employee_salary 40 строками:
-- в 10 строк из 40 вставить несуществующие employee_id
- */
+
+-- 6) Наполнить таблицу employee_salary 40 строками:
+-- в 10 строк из 40 вставить несуществующие employee_id
 
 insert into employee_salary (employee_id, salary_id)
 values(1, 1), (2, 3), (3, 4), (4, 5), (5, 16), (6, 11), (7, 10), (8, 9), 
@@ -142,13 +139,11 @@ values(1, 1), (2, 3), (3, 4), (4, 5), (5, 16), (6, 11), (7, 10), (8, 9),
 (27, 8), (28, 8), (29, 9), (30, 11), (72, 11), (73, 10), (74, 1), (75, 3), (76, 4), 
 (77, 8), (78, 7), (79, 11), (80, 15), (81, 16);
 
-select * from employee_salary;
 
-/*
-Создать таблицу roles
-- id. Serial  primary key,
-- role_name. int, not null, unique
- */
+
+-- Создать таблицу roles
+-- id. Serial  primary key,
+-- role_name. int, not null, unique
 
 create table roles (
 	id serial primary key,
@@ -184,12 +179,11 @@ values('Junior Python developer'),
 ('Middle Automation QA engineer'), 
 ('Senior Automation QA engineer');
 
-/*
-Создать таблицу roles_employee
-- id. Serial  primary key,
-- employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
-- role_id. Int, not null (внешний ключ для таблицы roles, поле id)
-*/
+-- Создать таблицу roles_employee
+-- id. Serial  primary key,
+-- employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
+-- role_id. Int, not null (внешний ключ для таблицы roles, поле id)
+
 
 create table roles_employee (
 id serial primary key,
