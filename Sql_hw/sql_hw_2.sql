@@ -396,5 +396,3 @@ join employees on employee_salary.employee_id = employees.id
 join salary on employee_salary.salary_id = salary.id 
 join roles on employee_salary.employee_id = roles.id
 where role_name like '%Junior%' and role_name like '%QA%';
-
---21. Вывести среднюю зарплату всех Junior специалистов
